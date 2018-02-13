@@ -1,0 +1,46 @@
+<html>
+    <title>Arrays JS</title>
+
+    <head>
+        
+        <style type="text/javacript">
+        
+        
+        
+        </style>
+        
+    </head>
+    <body>
+        <p><b>How many fingers?</b></p>
+        <input type="text" id="guess">
+        <button id="btn">Guess!</button>
+        
+        <script type="text/javascript">
+            
+          //Math.random() is used to generate random numbers ,with math.floor() we can remove decimals  (* 11) here used to get the range.
+            document.getElementById("btn").onclick=function(){
+            var randomNumber = (Math.floor(Math.random() * 11));
+            if(document.getElementById("guess").value == randomNumber){
+                
+                alert("Wow!! you guessed it right");
+            }
+                else{
+                    alert("Wrong!! The number was: " +  randomNumber);
+                }
+                
+            }
+            
+        
+            
+            
+            
+        </script>
+         
+        
+        
+        
+        
+        
+    </body>
+    
+</html>
